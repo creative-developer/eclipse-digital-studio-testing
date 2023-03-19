@@ -1,4 +1,4 @@
-import { MainScreen } from './MainScreen';
-import { NotFoundScreen } from './NotFoundScreen';
+import { MainScreen } from './main/MainScreen';
+import { NotFoundScreen } from './notFound/NotFoundScreen';
 
 export const screens = { NotFoundScreen, MainScreen };

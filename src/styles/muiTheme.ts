@@ -1,4 +1,5 @@
 import { createTheme } from '@mui/material/styles';
+import { Colors } from 'typings/colors';
 
 export const theme = createTheme({
   breakpoints: {
@@ -11,11 +12,11 @@ export const theme = createTheme({
       xl: 1208 + 48,
     },
   },
-  // palette: {
-  //   primary: { main: '' },
-  //   secondary: { main: '' },
-  //   error: { main: '' },
-  // },
+  palette: {
+    primary: { main: Colors.accent },
+    // secondary: { main: '' },
+    // error: { main: '' },
+  },
   // typography: {
   //   fontFamily: "'Ubuntu', sans-serif",
   //   h1: {},
@@ -85,11 +86,7 @@ export const theme = createTheme({
       },
     },
     MuiAppBar: {
-      styleOverrides: {
-        colorPrimary: {
-          background: 'linear-gradient(222.09deg, rgba(249, 142, 128, 0.2) 18.52%, rgba(249, 142, 128, 0) 45.76%), #F7776A',
-        },
-      },
+      styleOverrides: {},
     },
   },
 });
